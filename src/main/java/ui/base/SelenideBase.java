@@ -28,7 +28,7 @@ public abstract class SelenideBase {
         options.addArguments("--no-sandbox");
         options.addArguments("--lang=ru_RU.UTF8");
         options.addArguments("--window-size=1200,768");
-        //options.addArguments("--headless");
+        options.addArguments("--headless");
         Configuration.timeout = 30000;
         driver = new ChromeDriver(options);
         WebDriverRunner.setWebDriver(driver);
